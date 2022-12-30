@@ -12,7 +12,7 @@ abstract class WithAuthorizationController
     protected function authorization(Request $request): ?User
     {
         $params = $request->getCookieParams();
-        if(isset($params["Token"]))
+        if(!empty($params["Token"]))
         {
             return $this->getUserRepository()->findOneByToken($params["Token"]);
         }

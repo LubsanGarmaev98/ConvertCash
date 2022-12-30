@@ -4,9 +4,6 @@ use App\Controller\ConsoleController;
 use App\Controller\CurrencyController;
 use App\Controller\UserController;
 use Slim\App;
-use Slim\Psr7\Request;
-use Slim\Psr7\Response;
-use Slim\Routing\RouteCollectorProxy;
 use Slim\Views\PhpRenderer;
 
 return function (App $app) {
